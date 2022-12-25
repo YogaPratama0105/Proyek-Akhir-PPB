@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "358756463776",
+    "project_id": "rentalmobilapp-d20d3",
+    "storage_bucket": "rentalmobilapp-d20d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358756463776:android:32f7373ab5865984dc45c5",
+        "android_client_info": {
+          "package_name": "com.example.rentalmobilapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358756463776-oqipe3po46865h0hves0h42ivt5jncin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqc9CgppzzSPetP0k4CE2R99ZZMEKSQwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358756463776-oqipe3po46865h0hves0h42ivt5jncin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

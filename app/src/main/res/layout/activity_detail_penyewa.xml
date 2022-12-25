@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbDetailPenyewa"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lavender"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbDetailPenyewa"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:paddingBottom="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/lavender"
+                app:strokeWidth="4dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+
+                    <TextView
+                        android:id="@+id/idPenyewa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Identitas Penyewa"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/namaPenyewa"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/idPenyewa"
+                        android:layout_marginTop="25dp"
+                        android:text="Nama Penyewa :"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/detailPenyewa"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/namaPenyewa"
+                        android:text="Penyewa"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/namaAlamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/detailPenyewa"
+                        android:layout_marginTop="15dp"
+                        android:text="Alamat :"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/alamatPenyewa"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/namaAlamat"
+                        android:text="Penyewa"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textTelepon"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/alamatPenyewa"
+                        android:layout_marginTop="15dp"
+                        android:text="No. Telp/HP : "
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/teleponPenyewa"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/textTelepon"
+                        android:text="+62"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/lavender"
+                app:strokeWidth="4dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+
+                    <TextView
+                        android:id="@+id/dataMobil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Data Mobil"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/merkMobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/dataMobil"
+                        android:layout_marginTop="25dp"
+                        android:text="Merk Mobil :"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/detailMerk"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/merkMobil"
+                        android:text="Brio"
+                        android:textColor="@color/lavender"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/textHarga"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/detailMerk"
+                        android:layout_marginTop="15dp"
+                        android:text="Harga :"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/detailHarga"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/textHarga"
+                        android:text="Rp. 400000"
+                        android:textColor="@color/lavender"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/textPromo"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/detailHarga"
+                        android:layout_marginTop="15dp"
+                        android:text="Promo :"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/detailPromo"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/textPromo"
+                        android:text="Rp. 400000"
+                        android:textColor="@color/lavender"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/textLamaSewa"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/detailPromo"
+                        android:layout_marginTop="15dp"
+                        android:text="Lama Sewa :"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/detailLamaSewa"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/textLamaSewa"
+                        android:text="7 Hari"
+                        android:textColor="@color/lavender"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/textTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/detailLamaSewa"
+                        android:layout_marginTop="15dp"
+                        android:text="Total Harga"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/detailTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/textTotal"
+                        android:text="Rp. 700000"
+                        android:textColor="@color/lavender"
+                        android:textSize="19sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
